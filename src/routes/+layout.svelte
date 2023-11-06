@@ -3,8 +3,8 @@
 	let theme = 'cyberpunk';
 </script>
 
-<div data-theme={theme} class="min-h-screen">
-	<nav>
+<div data-theme={theme} class="min-h-screen p-3">
+	<nav class="mb-3">
 		<a href="/">home</a>
 		<a href="/about">about</a>
 		<a href="/students">students</a>

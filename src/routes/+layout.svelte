@@ -1,13 +1,19 @@
 <script>
 	import '../app.postcss';
-	let theme = 'cupcake';
+	let theme = 'cyberpunk';
 </script>
 
 <div data-theme={theme} class="min-h-screen">
-	<select bind:value={theme} class="fixed right-0">
-		<option value="cupcake">Cupcake</option>
-		<option value="synthwave">Synthwave</option>
-		<option value="cyberpunk">Cyberpunk</option>
+	<nav>
+		<a href="/">home</a>
+		<a href="/about">about</a>
+	</nav>
+
+	<select bind:value={theme} class="fixed top-0 right-0">
+		<option value="cyberpunk">cyberpunk</option>
+		<option value="coffee">coffee</option>
+		<option value="synthwave">synthwave</option>
 	</select>
+
 	<slot />
 </div>

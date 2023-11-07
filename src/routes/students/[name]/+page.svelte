@@ -3,7 +3,7 @@
 	export let data;
 </script>
 
-<div data-theme={$page.params.name === 'maco' ? 'valentine' : null}>
+<div data-theme={$page.params.name === 'maco' ? 'luxury' : null}>
 	<h1>{$page.params.name[0].toUpperCase() + $page.params.name.slice(1)}s Homepage</h1>
 
 	<p>$page.url: {JSON.stringify($page.url)}</p>

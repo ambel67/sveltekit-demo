@@ -3,12 +3,7 @@
 </script>
 
 <div class="prose">
-	<h1>SSR with very slow data</h1>
-	<p>
-		You had to wait for the data to be loaded, before navigation to this page was possible (the data
-		load was deliberately slow):
-	</p>
-	<br />
+	<h1>SSR</h1>
 	<p>
 		{JSON.stringify(data)}
 	</p>

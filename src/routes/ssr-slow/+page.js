@@ -1,4 +1,4 @@
-
+// export const ssr = false;
 export async function load() {
     return {
         user: new Promise((resolve, reject) =>

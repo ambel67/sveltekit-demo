@@ -1,12 +1,8 @@
 <script>
-	let students = ['Mauri', 'Basti', 'Maco'];
+	let students = ['Maurice', 'Jeroen', 'Maryam'];
 </script>
 
 <h1>These are our students:</h1>
-<ul>
-	{#each students as student}
-		<li>
-			<a href="/students/{student.toLowerCase()}">{student}</a>
-		</li>
-	{/each}
-</ul>
+{#each students as student}
+	<a href="/students/{student.toLowerCase()}">{student}</a>
+{/each}

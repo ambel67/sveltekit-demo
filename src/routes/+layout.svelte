@@ -1,22 +1,23 @@
 <script>
 	import '../app.postcss';
-	let theme = 'cyberpunk';
+	let theme = 'night';
 </script>
 
-<div data-theme={theme} class="min-h-screen p-3">
-	<nav class="flex items-center gap-8 m-4">
-		<a href="/" class="text-center">Home</a>|
-		<a href="/students" class="text-center">Students <br />(Dynamic Routing)</a>|
-		<a href="/csr">CSR</a>|
-		<a href="/ssr">SSR</a>|
-		<a href="/ssr-slow" class="text-center">SSR <br />(slow)</a>|
-		<a href="/universal-stream" class="text-center">Universal-Stream</a>
+<div data-theme={theme} class="min-h-screen">
+	<nav>
+		<a href="/">home</a>
+		<a href="/about">about</a>
+		<a href="/students">students</a>
 	</nav>
 
 	<select bind:value={theme} class="fixed top-0 right-0">
-		<option value="cyberpunk">cyberpunk</option>
-		<option value="coffee">coffee</option>
-		<option value="synthwave">synthwave</option>
+		<option value="light"> light</option>
+		<option value="night"> night</option>
+		<option value="coffee"> coffee</option>
+		<option value="lemonade"> lemonade</option>
+		<option value="cmyk"> cmyk</option>
+		<option value="bussiness"> business</option>
+		<option value="dracula"> dracula</option>
 	</select>
 
 	<slot />

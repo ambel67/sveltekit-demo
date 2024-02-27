@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@supabase/supabase-js':
-    specifier: github:supabase/supabase-js
-    version: github.com/supabase/supabase-js/4eb677aad51c47b160665c453a51bfdef20f0d49
+    specifier: ^2.39.7
+    version: 2.39.7
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -379,6 +379,20 @@ packages:
     resolution: {integrity: sha512-OpLoDRjFwClwc2cjTJZG8XviTiQH4Ik8sCiMK5v7et0MDu2QlXjCAW3ljxJB5+z/KazdMOTnySi+hysxWUPu3w==}
     dependencies:
       '@supabase/node-fetch': 2.6.15
+    dev: false
+
+  /@supabase/supabase-js@2.39.7:
+    resolution: {integrity: sha512-1vxsX10Uhc2b+Dv9pRjBjHfqmw2N2h1PyTg9LEfICR3x2xwE24By1MGCjDZuzDKH5OeHCsf4it6K8KRluAAEXA==}
+    dependencies:
+      '@supabase/functions-js': 2.1.5
+      '@supabase/gotrue-js': 2.62.2
+      '@supabase/node-fetch': 2.6.15
+      '@supabase/postgrest-js': 1.9.2
+      '@supabase/realtime-js': 2.9.3
+      '@supabase/storage-js': 2.5.5
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
 
   /@sveltejs/adapter-auto@2.1.1(@sveltejs/kit@1.30.4):
@@ -1787,19 +1801,3 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
     dev: true
-
-  github.com/supabase/supabase-js/4eb677aad51c47b160665c453a51bfdef20f0d49:
-    resolution: {tarball: https://codeload.github.com/supabase/supabase-js/tar.gz/4eb677aad51c47b160665c453a51bfdef20f0d49}
-    name: '@supabase/supabase-js'
-    version: 0.0.0-automated
-    dependencies:
-      '@supabase/functions-js': 2.1.5
-      '@supabase/gotrue-js': 2.62.2
-      '@supabase/node-fetch': 2.6.15
-      '@supabase/postgrest-js': 1.9.2
-      '@supabase/realtime-js': 2.9.3
-      '@supabase/storage-js': 2.5.5
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: false

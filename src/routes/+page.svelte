@@ -1,7 +1,7 @@
 <script>
-	import { supabase } from '$lib/supabase';
+	import { supabase } from '$lib/supabase.js';
 
-	let promise = supabase.from('countries').select('*');
+	let promise = supabase.from('countries').select();
 </script>
 
 {#await promise}

@@ -5,8 +5,58 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+		<link href="./_app/immutable/assets/0.4196d8b6.css" rel="stylesheet" />
+
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<div data-theme="cyberpunk" class="min-h-screen p-3">
+				<nav class="flex items-center gap-8 m-4" data-svelte-h="svelte-1lf3t8v">
+					<a href="/" class="text-center">Home</a>|
+					<a href="/students" class="text-center">Students <br />(Dynamic Routing)</a>|
+					<a href="/csr">CSR</a>| <a href="/ssr">SSR</a>|
+					<a href="/ssr-slow" class="text-center">SSR <br />(slow)</a>|
+					<a href="/universal-stream" class="text-center">Universal-Stream</a>
+				</nav>
+				<select class="fixed top-0 right-0">
+					<option value="cyberpunk" data-svelte-h="svelte-dn6a5g">cyberpunk</option>
+					<option value="coffee" data-svelte-h="svelte-1001t5a">coffee</option>
+					<option value="synthwave" data-svelte-h="svelte-ptn5l0">synthwave</option>
+				</select>
+			
+			<script>
+				{
+					__sveltekit_1b1ibu8 = {
+						base: new URL('.', location).pathname.slice(0, -1),
+						env: {
+							PUBLIC_SUPABASE_ANON_KEY:
+							"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF5ZWllZWhscmtweG95bGxua2diIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg0MzYwMjEsImV4cCI6MjAyNDAxMjAyMX0.UPExa5xOyQdsnlzaubBR2GuziagUg4oNmOQVGtFsVsk",
+							PUBLIC_SUPABASE_URL: 'https://ayeieehlrkpxoyllnkgb.supabase.co'
+						}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null, null];
+
+					Promise.all([
+						import('./_app/immutable/entry/start.01496c39.js'),
+						import('./_app/immutable/entry/app.d66368d2.js')
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>

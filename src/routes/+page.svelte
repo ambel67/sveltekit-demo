@@ -5,7 +5,7 @@
 </script>
 
 {#await promise}
-	<div><span class="loading loading-spinner loading-lg" /></div>
+	<div><span class="loading loading-dots loading-md" /></div>
 {:then result}
 	<ul>
 		{#each result.data as country}

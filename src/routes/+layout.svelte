@@ -26,11 +26,11 @@
 		</div>
 	</nav>
 
-	<select bind:value={$theme} class="fixed top-0 right-0">
+	<select bind:value={$theme} class="fixed top-0 right-0 bg-transparent text-gray-500">
 		<option value="synthwave"> synthwave</option>
 		<option value="night"> night</option>
 		<option value="coffee"> coffee</option>
-		<option value="lemonade"> lemonade</option>
+		<option value="business">business </option>
 	</select>
 
 	<slot />

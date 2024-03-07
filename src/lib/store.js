@@ -6,7 +6,7 @@ session.subscribe((value) => {
 	localStorage.session = JSON.stringify(value);
 });
 
-export const theme = writable(localStorage.theme || 'synthwave');
+export const theme = writable(localStorage.theme || 'coffee');
 
 theme.subscribe((value) => {
 	localStorage.theme = value;

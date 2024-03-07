@@ -16,10 +16,14 @@
 </script>
 
 <div data-theme={$theme} class="min-h-screen p-3">
-	<nav class="flex items-center gap-8 m-4">
-		<a href="/" class="text-center">Home</a>
-		<a href="/login" class="text-center">Login</a>
-		<a href="/profile" class="text-center">Profile</a>
+	<nav class="bg-opacity-75 text-white px-4 py-3">
+		<div class="flex justify-between items-center max-w-6xl mx-auto">
+			<a href="/" class="text-lg font-bold">Home</a>
+			<div class="flex gap-8">
+				<a href="/login">Login</a>
+				<a href="/profile">Profile</a>
+			</div>
+		</div>
 	</nav>
 
 	<select bind:value={$theme} class="fixed top-0 right-0">

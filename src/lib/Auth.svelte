@@ -23,7 +23,6 @@
 </script>
 
 <div class="bg-gray-100 rounded-lg p-8 max-w-md w-full mx-auto">
-	<!-- <h1 class="text-2xl font-semibold mb-4 text-center">Supabase + Svelte</h1> -->
 	<p class="text-gray-600 mb-6 text-center">Sign in via magic link with your email below</p>
 	<form on:submit|preventDefault={handleLogin}>
 		<div class="mb-4">

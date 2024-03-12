@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	//import {AuthSession} from '@supabase/supabase-js';
 	import { supabase } from '$lib/supabase.js';
 	import { session } from '$lib/store';
+	import Avatar from '$lib/Avatar.svelte';
 
 	let loading = false;
 	let username: string | null = null;
@@ -67,6 +69,7 @@
 	<h1 class="text-center font-bold text-3xl mb-8">Update Your Profile</h1>
 
 	{#if $session}
+		<Avatar size={150} bind:url={avatarUrl} />+
 		<form on:submit|preventDefault={updateProfile} class="max-w-md mx-auto">
 			<div class="mb-6">
 				<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email:</label>
